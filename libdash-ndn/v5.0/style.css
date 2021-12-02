@@ -1,0 +1,299 @@
+.main {
+    width: 100%;
+    height: 1200px;
+
+}
+
+.stats {
+    width: 100%;
+    height: 4%;
+}
+
+.stat-panel {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.stat-panel p {
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    /* vertical-align: middle; */
+    margin: 0;
+    font-size: large;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.rebuf {
+    width: 100%;
+    height: 3%;
+}
+
+/* .rebuf_indicator { */
+/*     width: 50%; */
+/*     height: 100%; */
+/*     float: left; */
+/*     font-size: xx-large; */
+/*     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+/*     font-weight: bold; */
+/* } */
+
+.rebuf p {
+    width: 50%;
+    height: 100%;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    float: left;
+    font-size: xx-large;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: red;
+    margin: 0;
+    /* width: 50%; */
+    /* height: 100%; */
+    /* float: left; */
+    /* font-size: xx-large; */
+    /* font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    /* font-weight: bold; */
+}
+
+
+.trace {
+    width: 100%;
+    height: 4%;
+}
+
+.trace p {
+    width: 50%;
+    height: 35%;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    float: left;
+    font-size: xx-large;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.trace p2 {
+    width: 50%;
+    height: 35%;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    float: left;
+    font-size: xx-large;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+#player1 select {
+    width: 10%;
+    margin: 50px;
+    float: left;
+}
+
+#player2 select {
+    width: 10%;
+    margin: 50px;
+    float: left;
+}
+.video {
+    width: 100%;
+    height: 40%;
+/* [disabled]border: 2px solid; */
+}
+
+#player1  {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#player2  {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#ours  {
+    width: 100%;
+    height: 100%;
+}
+
+#others  {
+    width: 100%;
+    height: 100%;
+}
+
+.bitrate {
+    width: 100%;
+    height: 20%;
+}
+
+.buffer {
+    width: 100%;
+    height: 20%;
+}
+
+.throughput {
+    width: 100%;
+    height: 20%;
+}
+
+.upload {
+    width: 100%;
+    height: 5%;
+}
+
+.upload button {
+    margin: 20px 40% 0px 40%;
+    width: 20%;
+    background-color: gold;
+}
+
+.visual{
+    margin: 20px 0px 20px 20px;
+}
+
+svg {
+    font: 25px sans-serif;
+}
+
+.line {
+    fill: none;
+    stroke: red;
+    stroke-width: 5px;
+}
+
+.line2 {
+    fill: none;
+    stroke: blue;
+    stroke-width: 5px;
+}
+
+.line3 {
+    fill: none;
+    stroke: green;
+    stroke-width: 5px;
+}
+
+.line4 {
+    fill: none;
+    stroke: orange;
+    stroke-width: 5px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 5px;
+    shape-rendering: crispEdges;
+}
+
+.legend1 {
+    width: 12%;
+    height: 10%;
+    position: absolute;
+    top: 140%;
+    left: 40%;
+}
+
+.legend2 {
+    width: 12%;
+    height: 10%;
+    position: absolute;
+    top: 140%;
+    left: 88.5%;
+}
+
+.square {
+    width:10px;
+    height: 10px;
+    border: solid 1px;
+}
+
+#green{
+    background-color: green;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#pt {
+    margin: -14px 14px;
+    padding: 0px 0px 20px 0px;
+}
+
+#at {
+    margin: -14px 14px;
+    padding: 0px 0px 20px 0px;
+}
+.startbutton {
+    /* [disabled]top: 50%; */
+    right: 50%;
+    clear: right;
+    font-size: xx-large;
+    text-align: center;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    left: 0px;
+}
+.notebar {
+    height: 5%;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #FB060A;
+    margin-top: 5%;
+    font-size: xx-large;
+}
+
+.menu {
+    /* [disabled]top: 50%; */
+    right: 50%;
+    clear: right;
+    font-size: xx-large;
+    text-align: center;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    left: 0px;
+}
+
+.trace select {
+	width: 50%;
+	height: 100%;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	float: left;
+	font-size: xx-large;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+/* .trace select { */
+/*     width: 50%; */
+/*     height: 35%; */
+/*     margin-right: 0px; */
+/*     margin-bottom: 0px; */
+/*     text-align: center; */
+/*     float: left; */
+/*     font-size: xx-large; */
+/*     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+/*     font-weight: bold; */
+/* } */
+
+/* .trace menu { */
+/*     width: 50%; */
+/*     height: 35%; */
+/*     margin-right: 0px; */
+/*     margin-bottom: 0px; */
+/*     text-align: center; */
+/*     float: left; */
+/*     font-size: xx-large; */
+/*     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+/*     font-weight: bold; */
+/* } */

@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dash.js Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="d3.v3.min.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <button class="startbutton" id="start_demo" onclick="onStartResetButtonClicked()">Start</button>
+      <!-- <button class="startbutton" id="start_demo" onclick="playVideo()">START</button> -->
+      <!-- <button class="startbutton" id="reset_demo" onclick="resetAll()">RESET</button> -->
+      
+       <select class="menu" id="select_demotype" onchange="showMenu()">
+        <option value="1" selected>Offline Demo</option>
+	<option value="2">Online Demo</option>
+      </select>
+      
+      <select class="menu" id="select_trace">
+        <option value="1">Broadband Trace 1</option>
+	<option value="2">Broadband Trace 2</option>
+	<option value="3">Broadband Trace 3</option>
+        <option value="4">Cellular Trace 1</option>
+        <option value="5">Cellular Trace 2</option>
+        <option value="6">Cellular Trace 3</option>
+      </select>
+
+      <select class="menu" id="select_video">
+        <option value="1">Envivio</option>
+	<option value="2">Sports</option>
+	<option value="3">Elephant Dream</option>
+        <option value="4" selected>CMU</option>
+      </select>
+
+      <div class="trace">
+     
+
+	<select id="select_algo1">
+    	  <option value="1" selected>FastMPC</option>
+    	  <option value="2">Buffer-based</option>
+    	  <option value="3">Rate-based</option>
+    	  <option value="4">dash.js reference player</option>
+    	</select>
+
+	
+        <select id="select_algo2">
+          <option value="1">FastMPC</option>
+    	  <option value="2">Buffer-based</option>
+    	  <option value="3">Rate-based</option>
+    	  <option value="4" selected>dash.js reference player</option>
+        </select>
+
+	</div>
+
+	
+    	
+	<!-- <p> RobustMPC </p> -->
+    	<!-- <p> Buffer-Based </p> -->
+	<!-- <p> Trace </p> -->
+
+	<div class="rebuf">
+	  <!-- <div class="rebuf_indicator"> -->
+	    <p id="isRebuf1"></p>
+	  <!-- </div> -->
+	  <!-- <div class="rebuf_indicator"> -->
+	    <p id="isRebuf2"></p>
+	  <!-- </div> -->
+	</div>
+
+
+      <div class="video">
+    	<div id="player1">
+    	  <video id="ours" controls>
+    	</div>
+    	<div id="player2">
+    	  <video id="others" controls>
+    	</div>
+      </div>
+
+      <div class="stats">
+	<div class="stat-panel">
+	  <p>Average Bitrate: 
+	    <span id="avgbitrate1">0 </span>
+	    Kbps
+	  </p>
+	  <p>Bitrate Change: 
+	    <span id="ratechange1">0 </span>
+	    Kbps/chunk
+	  </p>
+	  <p>Rebuffer Time: 
+	    <span id="rebuf1">0 </span>
+	    sec
+	  </p>
+	</div>
+	<div class="stat-panel">
+	  <p>Average Bitrate: 
+	    <span id="avgbitrate2">0 </span>
+	    Kbps
+	  </p>
+	  <p>Bitrate Change: 
+	    <span id="ratechange2">0 </span>
+	    Kbps/chunk
+	  </p>
+	  <p>Rebuffer Time: 
+	    <span id="rebuf2">0 </span>
+	    sec
+	  </p>
+	</div>
+      </div>
+
+      <div class="bitrate">
+    	<div id="player1"></div>
+    	<div id="player2"></div>
+      </div>
+      
+      <!-- <div id="note"> -->
+      <!-- 	<p class="notebar" id="note1"> -->
+      <!--     Player bar will show up when rebuffer happens! -->
+      <!--   </p> -->
+      <!-- </div> -->
+
+      <script src="dash.all_v1.5.0.js"></script>
+      <script type="text/javascript" src="PlayerController.js"></script>
+      <script type="text/javascript" src="Trace.js"></script>
+      <script type="text/javascript" src="VisualizationController.js"></script>
+
+
+      <!-- <script> -->
+      <!-- 	$(document).ready(function(){ -->
+      <!-- 	$("#start_demo").click(function(){ -->
+      <!-- 	if ($(this).text() == "START")  -->
+      <!-- 	{  -->
+      <!-- 	$(this).text("RESET").attr('onclick', 'resetAll()');  -->
+      <!-- 	} -->
+      <!-- 	else  -->
+      <!-- 	{  -->
+      <!-- 	$(this).text("START").attr('onclick', 'playVideo()');  -->
+      <!-- 	};  -->
+      <!-- 	$(this);  -->
+      <!-- 	}); -->
+      <!-- 	}); -->
+      <!-- </script> -->
+    </div>
+  </body>
+
+
+</html>
